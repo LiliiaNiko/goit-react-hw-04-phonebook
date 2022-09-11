@@ -11,9 +11,7 @@ export const App = () => {
   const [filter, setFilter] = useState('');
 
   const handleRemove = id => {
-    setContacts({
-      contacts: contacts.filter(contact => contact.id !== id),
-    });
+    setContacts(contacts.filter(contact => contact.id !== id));
   };
 
   const formSubmitHandler = data => {
@@ -24,7 +22,7 @@ export const App = () => {
   };
 
   const changeFilter = e => {
-    setFilter({ filter: e.currentTarget.value });
+    setFilter(e.currentTarget.value);
   };
 
   useEffect(() => {

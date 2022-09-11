@@ -14,8 +14,8 @@ export const ContactsForm = ({ onSubmit }) => {
   };
 
   const reset = () => {
-    setName({ name: '' });
-    setNumber({ number: '' });
+    setName('');
+    setNumber('');
   };
 
   const handleChange = e => {
